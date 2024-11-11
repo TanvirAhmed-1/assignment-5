@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+        <!-- tailwine css cmd -->
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Manrope:wght@200..800&display=swap');
+            #font{
+                font-family: "Lexend", sans-serif;
+            }
+            #p{
+                color: rgba(17, 17, 17, 0.7);
+            }
+        </style>
+</head>
+<body class="bg-white mx-auto pb-20">
+<nav>
+    <div class=" bg-[#F9F7F3] max-w-[1440px] mx-auto ">
+      
+        <div class="flex justify-evenly pt-4 ">
+                    
+              <div class=" navbar flex justify-center ">
+                <a onclick="homepage()" class=" btn px-7 py-2 rounded-xl text-2xl font-semibold hover:bg-[#B4F461] border-none text-black   bg-[#B4F461] ">HOME</a>
+              </div>
+        
+              <div class="navbar flex justify-center  ">
+                <img src="/assets/logo.png" alt="" srcset="">
+                <a class="text-black font-semibold ml-4  text-xl">Donate Bangladesh</a>
+              </div>
+        
+              <div class="navbar flex justify-center ">
+                <img src="./assets/coin.png" alt=" coin" srcset="">
+                <a id="blogaccount" class=" font-semibold ml-4  text-xl">6000 BDT</a>
+              </div>
+        </div>
+              
+        
+        <div class="flex w-full flex-col border-opacity-50">
+            <div class="card h-7"></div>
+          </div>
+    </div>
+</nav>
+    
+
+<div class=" max-w-[1140px] mx-auto">
+    <div class=" font-extrabold text-black text-[40px] py-6 ">
+        <h1>Improtant FAQ</h1>
+    </div>
+  <div class="grid gap-4">
+    <div class="collapse collapse-arrow bg-white border-2 rounded-xl border-gray-200">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title text-xl font-medium text-black">What is the Document Object Model</div>
+        <div class="collapse-content">
+          <p class="text-black">The Document Object Model (DOM) is a programming interface for web documents. It represents the page as a tree of nodes, allowing scripts to dynamically manipulate HTML and CSS elements.</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-white border-2 rounded-xl border-gray-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium text-black">How do you Select an element from the DOM?</div>
+        <div class="collapse-content">
+          <p class="text-black">You can select an element from the DOM using methods like `getElementById()`, `querySelector()`, `getElementsByClassName()`, or `querySelectorAll()` depending on your needs.</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-white border-2 rounded-xl border-gray-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium text-black">What is the Event Delegation in the context of the DOM, and why is it useful</div>
+        <div class="collapse-content">
+          <p class="text-black">Event delegation is a technique where a single event listener is attached to a parent element, allowing it to handle events for child elements. It improves performance and simplifies code by reducing the number of event listeners needed.</p>
+        </div>
+      </div>
+
+      <div class="collapse collapse-arrow bg-white border-2 rounded-xl border-gray-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium text-black">How do you manipulate the element's attributes and styles using the DOM?  </div>
+        <div class="collapse-content">
+          <p class="text-black">To manipulate an element's attributes and styles in the DOM, first select the element using methods like `getElementById()` or `querySelector()`. Then, modify its attributes with `setAttribute()` or change its inline styles using `element.style.property = value`. You can also update the element's classes with `classList.add()`, `classList.remove()`, or `classList.toggle()` to adjust its look and behavior.</p>
+        </div>
+      </div>
+  </div>
+</div>
+
+
+<script src="./pupup.js"></script>
+<script src="./js/input.js"></script>
+<script src="./js/function.js"></script>
+<script src="./js/inertextfunction.js"></script>
+
+</body>
+</html>
