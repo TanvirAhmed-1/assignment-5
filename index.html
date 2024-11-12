@@ -13,11 +13,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Manrope:wght@200..800&display=swap');
-        #font{
+        *{
             font-family: "Lexend", sans-serif;
         }
         .p{
-            color: rgba(17, 17, 17, 0.7);
+            color: rgba(117, 114, 114, 0.7);
         }
     </style>
 </head>
@@ -50,19 +50,27 @@
 </div>
       <!-- button -->
       <div class="flex justify-center gap-4 lg:pt-[50px] pt-9 pb-8 bg-white">
-        <button class="btn  text-black border-gray-300 bg-[#B4F461] hover:bg-[#B4F461] btn-md sm:btn-sm md:btn-md lg:btn-lg font-semibold">Donation</button>
-        <button  onclick="history()" class="btn text-gray-300 hover:text-black border-gray-300 bg-white hover:bg-[#B4F461] btn-md sm:btn-sm md:btn-md lg:btn-lg font-semibold">History</button>
+        <button id="donation-b" onclick="tanvi()" class="btn  text-black border-gray-400 bg-gray-300 hover:bg-[#B4F461]  btn-md sm:btn-sm md:btn-md lg:btn-lg font-semibold">Donation</button>
+        <button id="history" onclick="tan()" class="btn text-black border-gray-400 bg-gray-300 hover:bg-[#B4F461] btn-md sm:btn-sm md:btn-md lg:btn-lg font-semibold">History</button>
      </div>
 
  
 </nav>
 
 <main class="max-w-[1140px] mx-auto">
+ <!-- history div -->
+ <div id="history-div" class=" hidden">
+    <h2 class="text-2xl text-black font-semibold ml-[40px]">Donation History</h2>
+    <i class="fas fa-divide    "></i>
+    <div id="donation-history" class="mx-10  border-2 rounded-xl my-4 bg-slate-400">
 
+    </div>
+ </div>
 
-
-     <!-- Donate for Flood at Noakhali, Bangladesh -->
-      <div class="grid lg:grid-cols-2 gap-6  lg:pr-8 py-8 px-6 rounded-xl border-2 mb-3">
+<!-- donate body -->
+ <div id="donatebutton">
+       <!-- Donate for Flood at Noakhali, Bangladesh -->
+       <div class="grid lg:grid-cols-2 gap-6  lg:pr-8 py-8 px-6 rounded-xl border-2 mb-3">
         <div>
            <img class="w-full" src="./assets/noakhali.png" alt="noakhali" srcset="">
         </div>
@@ -149,6 +157,7 @@
           <button onclick="openConfirmation()" id="add-mony-button3" class="bg-[#B4F461] text-center font-bold text-black text-2xl py-3 rounded-xl"> Donate Now</button>
         </div>
       </div>
+ </div>
 </main>
     
 
@@ -161,7 +170,9 @@
           <h2 class="text-2xl font-bold text-gray-800">Congrats!</h2>
         <div class="mt-4">
               
-              <span class="text-yellow-400 text-4xl">💰</span>
+              <span class="text-yellow-400 text-4xl flex justify-center">
+                <img src="./assets/coin.png" alt="" srcset="">
+              </span>
         </div>
           <p class="mt-4 text-gray-600">You Have Donated for Humankind</p>
           <p class="text-green-500 font-semibold">Successfully</p>

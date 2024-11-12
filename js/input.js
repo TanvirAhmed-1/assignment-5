@@ -10,19 +10,24 @@ document.getElementById('add-mony-button').addEventListener('click' , function(e
     return;
  }
  if(isNaN(userMonyCome)){
-    alert("You have sum Misstack");
+    alert("You have sum Misstack 100");
     return; 
  }
+//add time
+ const mydate=new Date()
+ console.log(mydate.toISOString())
+ //history add
 
-//  history add
-// const div=document.createElement('div');
-// div.innerHTML=`
-//   <div class='bg-black ' >
-//   <h4 class="text-white text-2xl "> Cash Out</h4>
-//   <p class="text-white text-xl">${userMonyCome} Donate for Flood at Noakhali, Bangladesh </P>
-//   </div>
-// `
-//  document.getElementById('history').appendChild(div);
+const div=document.createElement('div');
+div.innerHTML=`
+  <div class='bg-black border-2 rounded-xl my-4 px-5 mx-20 py-5' >
+  <h4 class="text-white text-2xl pb-3"> Donation</h4>
+  <p class="text-white text-xl my-3">${userMonyCome} Donate for Flood at Noakhali, Bangladesh </P>
+   <p>${mydate}</P>
+  </div>
+`
+// add history from div
+ document.getElementById('donation-history').appendChild(div);
 
 
  const donatemony=tanvir1("havemony");
@@ -62,6 +67,22 @@ document.getElementById('add-mony-button2').addEventListener ('click', function(
         return; 
      }
 
+     //add time
+ const mydate=new Date()
+ console.log(mydate.toISOString())
+ //history add
+
+const div=document.createElement('div');
+div.innerHTML=`
+  <div class='bg-black border-2 rounded-xl my-4 px-5 mx-20 py-5' >
+  <h4 class="text-white text-2xl pb-3"> Donation</h4>
+  <p class="text-white text-xl my-3">${userM2} Donate for Flood Relief in Feni,Bangladesh </P>
+   <p>${mydate}</P>
+  </div>
+`
+// add history from div
+ document.getElementById('donation-history').appendChild(div);
+
        const  donatemony2=tanvir1("havemony2");
        const accountBalance=tanvir1('account');
    
@@ -84,6 +105,22 @@ document.getElementById('add-mony-button3').addEventListener ('click', function(
         alert("You have sum Misstack");
         return; 
      }
+
+     //add time
+ const mydate=new Date()
+ console.log(mydate.toISOString())
+ //history add
+
+const div=document.createElement('div');
+div.innerHTML=`
+  <div class='bg-black border-2 rounded-xl my-4 px-5 mx-20 py-5' >
+  <h4 class="text-white text-2xl pb-3">Donation</h4>
+  <p class="text-white text-xl my-3">${userM2} Aid for Injured in the Quota Movement </P>
+   <p>${mydate}</P>
+  </div>
+`
+// add history from div
+ document.getElementById('donation-history').appendChild(div);
     const  donatemony2=tanvir1("havemony3");
     const accountBalance=tanvir1('account');
 
@@ -91,4 +128,17 @@ document.getElementById('add-mony-button3').addEventListener ('click', function(
     const subtractbalance2=subtractMony(accountBalance, userM2);
     document.getElementById('havemony3').innerText=addDonatemon2;
     document.getElementById('account').innerText=subtractbalance2;
+});
+
+// history option
+document.getElementById('history').addEventListener('click',function(){
+
+   hiddenbutton('history-div');
+});
+
+//donation option
+
+document.getElementById('donation-b').addEventListener('click',function(){
+
+   hiddenbutton('donatebutton');
 });

@@ -16,15 +16,7 @@ function goToPage2(){
 
 // home page function
 function homepage(){
-    window.location.href='home.html';
-};
-
-function history(){
-    window.location.href='history.html';
-};
-
-function dona(){
-    window.location.href='home.html';
+    window.location.href='index.html';
 };
 
     
