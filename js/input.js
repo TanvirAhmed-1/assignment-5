@@ -13,6 +13,7 @@ document.getElementById('add-mony-button').addEventListener('click' , function(e
     alert("You have sum Mistake.inter Number");
     return; 
  }
+
 //add time
  const mydate=new Date()
  console.log(mydate.toISOString())
@@ -34,7 +35,7 @@ div.innerHTML=`
  const accountBalance=tanvir1('account');
 
  if( accountBalance<userMonyCome  ){
-    alert("You have sum Misstack");
+    alert(" Sorry! You have no Mony");
     return;
  }
 
@@ -59,11 +60,11 @@ document.getElementById('add-mony-button2').addEventListener ('click', function(
        const userM2=tanvir("usermony2");
 
        if(userM2<0){
-        alert("You have sum Misstack");
+        alert("ohh! You have some mistake");
         return;
      }
      if(isNaN(userM2)){
-        alert("You have sum Misstack");
+        alert("You have sum Mistake.inter Number");
         return; 
      }
 
@@ -85,6 +86,10 @@ div.innerHTML=`
 
        const  donatemony2=tanvir1("havemony2");
        const accountBalance=tanvir1('account');
+       if( accountBalance<userM2  ){
+         alert(" Sorry! You have no Mony");
+         return;
+      }
    
        const addDonatemon2=tanviradd(userM2, donatemony2);
        const subtractbalance2=subtractMony(accountBalance, userM2);
@@ -98,11 +103,11 @@ document.getElementById('add-mony-button3').addEventListener ('click', function(
     const userM2=tanvir("usermony3");
 
     if(userM2<0){
-        alert("You have sum Misstack");
+        alert("ohh! You have some mistake");
         return;
      }
      if(isNaN(userM2)){
-        alert("You have sum Misstack");
+        alert("You have sum Mistake.inter Number");
         return; 
      }
 
@@ -123,6 +128,11 @@ div.innerHTML=`
  document.getElementById('donation-history').appendChild(div);
     const  donatemony2=tanvir1("havemony3");
     const accountBalance=tanvir1('account');
+    
+    if( accountBalance<userM2  ){
+      alert(" Sorry! You have no Mony");
+      return;
+   }
 
     const addDonatemon2=tanviradd(userM2, donatemony2);
     const subtractbalance2=subtractMony(accountBalance, userM2);
