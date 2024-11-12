@@ -6,11 +6,11 @@ document.getElementById('add-mony-button').addEventListener('click' , function(e
 
  const userMonyCome=tanvir('usermony');
  if(userMonyCome<0){
-    alert("You have sum Misstack");
+    alert("ohh! You have some mistake");
     return;
  }
  if(isNaN(userMonyCome)){
-    alert("You have sum Misstack 100");
+    alert("You have sum Mistake.inter Number");
     return; 
  }
 //add time

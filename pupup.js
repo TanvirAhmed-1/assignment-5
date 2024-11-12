@@ -1,6 +1,14 @@
 
   // Function show  user clicks "Donate Now"
   function openConfirmation() {
+    const userMonyCome=tanvir('usermony');
+    console.log(userMonyCome);
+    if(userMonyCome<0){
+        return;
+    }
+   if(isNaN(userMonyCome)){
+    return;
+   }
       document.getElementById('confirmationModal').classList.remove('hidden');
   }
 
